@@ -65,6 +65,20 @@
                                     <action selector="IniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AVh-8d-OAP"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJs-o7-2bz">
+                                <rect key="frame" x="107" y="526" width="200" height="31"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="JuZ-dr-e7E"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Ingresar con Google">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="GIDSignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GTJ-Kx-PWy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,6 +95,8 @@
                             <constraint firstItem="lBd-vc-VKw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="iHu-M2-dhE"/>
                             <constraint firstItem="Wts-uW-5yQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jcU-8C-Viz"/>
                             <constraint firstItem="Wts-uW-5yQ" firstAttribute="top" secondItem="lBd-vc-VKw" secondAttribute="bottom" constant="25" id="vW3-U0-aDw"/>
+                            <constraint firstItem="UJs-o7-2bz" firstAttribute="top" secondItem="Pey-49-8sG" secondAttribute="bottom" constant="30" id="wT5-vx-i4h"/>
+                            <constraint firstItem="UJs-o7-2bz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zCb-4i-DRn"/>
                         </constraints>
                     </view>
                     <connections>
@@ -97,6 +113,9 @@
         <image name="imagen" width="563" height="636"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
